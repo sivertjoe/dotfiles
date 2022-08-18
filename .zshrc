@@ -114,6 +114,7 @@ alias gr="git rebase"
 alias gaa="git add -A"
 alias gap="git add -p"
 alias gpuoh="git push -u origin HEAD"
+alias gbs="git branch --no-color --sort=-committerdate --format='%(refname:short)' | fzf --height 40% --print-query -0 -1 --header='Switch branch' | xargs git switch -C"
 
 alias tf="terraform"
 alias listeners="lsof -i -P | grep LISTEN"
